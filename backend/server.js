@@ -191,49 +191,48 @@ app.delete("/recipes/:id/permanent", async (req, res) => {
   }
 });
 
-app.post('/recipes/:id/rate', async (req, res) => {
-    const recipeId = req.params.id;
-    const score = req.body.score; // The score (1-5) sent from the frontend
 
-    // 1. Input Validation
-    if (!score || score < 1 || score > 5) {
-        return res.status(400).json({ message: "Rating score must be between 1 and 5." });
+app.post("/recipes/:id/rate", async (req, res) => {
+  try {
+    const id = req.params.id.trim();
+    const { score } = req.body;
+
+    // Validate score
+    if (typeof score !== "number" || score < 0) {
+      return res.status(400).json({ error: "Invalid score value" });
     }
 
-    try {
-        // 2. Find and Update the Recipe
-        // Assuming your Recipe model has 'num_ratings' (count) and 'total_score'
-        const updatedRecipe = await ratingCollection.findByIdAndUpdate(
-            recipeId,
-            {
-                $inc: { 
-                    num_ratings: 1, 
-                    total_score: score 
-                }
-            },
-            { new: true } // Return the updated document
-        );
-
-        if (!updatedRecipe) {
-            return res.status(404).json({ message: "Recipe not found." });
-        }
-
-        // 3. Recalculate Average Rating (Optional, but good practice)
-        const avgRating = updatedRecipe.num_ratings > 0 
-            ? updatedRecipe.total_score / updatedRecipe.num_ratings 
-            : 0;
-            
-        // Final update to store the calculated average rating (if you store it separately)
-        updatedRecipe.rating = avgRating;
-        await updatedRecipe.save();
-
-        // 4. Respond with the updated recipe data
-        res.status(200).json(updatedRecipe);
-
-    } catch (error) {
-        console.error("Rating error:", error);
-        res.status(500).json({ message: "Server error during rating update." });
+    // Step 1: Find the recipe
+    const recipe = await recipesCollection.findOne({ _id: new ObjectId(id) });
+    if (!recipe) {
+      return res.status(404).json({ error: "Recipe not found" });
     }
+
+    // Step 2: Compute new values
+    const newNumRatings = (recipe.num_ratings ?? 0) + 1;
+    const newTotalScore = (recipe.total_score ?? 0) + score;
+    const newAverage = newTotalScore / newNumRatings;
+
+    // Step 3: Update the document
+    await recipesCollection.updateOne(
+      { _id: new ObjectId(id) },
+      { $set: { num_ratings: newNumRatings, total_score: newTotalScore, rating: newAverage } }
+    );
+
+    // Step 4: Fetch the updated document
+    const updatedRecipe = await recipesCollection.findOne({ _id: new ObjectId(id) });
+
+    // Step 5: Send response
+    res.json({
+      message: "Rating updated successfully!",
+      recipe: updatedRecipe
+    });
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: err.message });
+  }
 });
+
 
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));

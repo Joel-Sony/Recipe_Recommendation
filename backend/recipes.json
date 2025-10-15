@@ -5,8 +5,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/660c57ed9149ba03ec9b05a0-487ce2f6.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/sweet-thai-chili-burgers-68ac368982758da705ef5519",
     "ingredients": ["ground beef", "breadcrumbs", "egg", "lettuce", "tomato", "thai chili sauce", "burger bun"],
-    "deleted": false
-
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Peppercorn Steak",
@@ -14,8 +16,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/peppercorn-steak-w06-e4014085.jpg",
     "source_url": "https://www.hellofresh.com/recipes/crushed-peppercorn-steak-5c489c0ac445fa44e622c422",
     "ingredients": ["sirloin steak", "black peppercorns", "cream", "garlic", "butter", "olive oil"],
-    "deleted": false
-
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Chicken & Pepper Enchiladas",
@@ -23,8 +27,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/6704604899e8e2a18bd76237-137279dd.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/chicken-and-pepper-enchiladas-6706cc2c10eac7b3edfebdac",
     "ingredients": ["chicken breast", "bell pepper", "cheese", "tortilla", "sour cream", "enchilada sauce"],
-    "deleted": false
-
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Crispy Cheddar Chicken",
@@ -32,7 +38,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/611d22ff1fc432111c386609-7da1d170.jpg",
     "source_url": "https://www.hellofresh.com/recipes/crispy-cheddar-chicken-611d22ff1fc432111c386609",
     "ingredients": ["chicken breast", "cheddar cheese", "breadcrumbs", "egg", "olive oil", "garlic powder"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Sirloin Steak & Roasted Garlic Pan Sauce",
@@ -40,7 +49,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/60f82a0367b2ce1a3350f0ac-e2968f9f.jpg",
     "source_url": "https://www.hellofresh.com/recipes/sirloin-steak-and-roasted-garlic-pan-sauce-60f82a0367b2ce1a3350f0ac",
     "ingredients": ["sirloin steak", "garlic", "butter", "olive oil", "beef stock", "thyme"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Hoisin Pork Burgers",
@@ -48,7 +60,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/hoisin-pork-burgers-c8b816cf.jpg",
     "source_url": "https://www.hellofresh.com/recipes/hoisin-pork-burgers-5d920ed4eae98854a63213d2",
     "ingredients": ["ground pork", "hoisin sauce", "egg", "lettuce", "cucumber", "burger bun"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Mediterranean Couscous Bowls",
@@ -56,7 +71,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/mediterranean-hummus-couscous-bowls-9aa1b9c2.jpg",
     "source_url": "https://www.hellofresh.com/recipes/mediterranean-hummus-couscous-bowls-5dcb270d75717c39e2461100",
     "ingredients": ["couscous", "hummus", "cucumber", "tomato", "olive", "feta cheese", "lemon juice"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Spaghetti Aglio e Olio",
@@ -64,7 +82,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/65aff4c1a33a91ae6a3f7e8b-3eff196b.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/chicken-and-mushroom-spaghetti-aglio-e-olio-65b16feba33a91ae6a3f8f97",
     "ingredients": ["spaghetti", "garlic", "olive oil", "chili flakes", "parsley", "parmesan cheese"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Margherita Pizza Pockets",
@@ -72,7 +93,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/66fd5b9399e8e2a18bd7302a-57419fd1.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/market/margherita-pizza-pockets-66fd5b9399e8e2a18bd7302a",
     "ingredients": ["pizza dough", "mozzarella cheese", "tomato sauce", "basil", "olive oil"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Garlic Herb Butter–Basted Scallops",
@@ -80,7 +104,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/665dec8907c68e1e8bb69ad5-61735c8a.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/garlic-herb-butter-basted-scallops-68ac41d082758da705ef5795",
     "ingredients": ["scallops", "garlic", "butter", "parsley", "lemon", "olive oil"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Prep & Bake Cheesy Tomato Ravioli",
@@ -88,7 +115,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/681989ce34c41957efda3f78-0efc1780.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/prep-and-bake-cheesy-tomato-ravioli-68ac4765903f39c73a195635",
     "ingredients": ["ravioli", "tomato sauce", "mozzarella cheese", "parmesan", "basil", "olive oil"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Bacon & Mushroom Risotto",
@@ -96,7 +126,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/66df5367e8117baf19724e1e-2923e138.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/bacon-mushroom-risotto-68ac562834401f72217718b3",
     "ingredients": ["arborio rice", "bacon", "mushrooms", "onion", "parmesan", "chicken broth"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "White Cheddar Crunch Burgers",
@@ -104,7 +137,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/661d64263d20ae432f30b50f-067e3e68.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/white-cheddar-crunch-burgers-68ac76d4903f39c73a19572b",
     "ingredients": ["ground beef", "white cheddar", "burger buns", "lettuce", "tomato", "crispy onions"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Sweet Chili Turkey Lettuce Wraps",
@@ -112,7 +148,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/6682eb6788a40e5df74250ce-ecf9a234.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/sweet-chili-turkey-lettuce-wraps-68ac81cd903f39c73a19572f",
     "ingredients": ["ground turkey", "lettuce", "sweet chili sauce", "carrots", "soy sauce", "scallions"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Spice Market Lentil Burgers",
@@ -120,7 +159,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/68ad864134401f7221771a56-2c136edf.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/spice-market-lentil-burgers-68ad864134401f7221771a56",
     "ingredients": ["lentils", "onion", "garlic", "cumin", "coriander", "burger buns"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Mozzarella-Crusted Chicken",
@@ -128,7 +170,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/de-mozzarella-crusted-chicken-w0-4336bddd.jpg",
     "source_url": "https://www.hellofresh.com/recipes/mozzarella-crusted-chicken-5845b27b2e69d7646110f1c2",
     "ingredients": ["chicken breast", "mozzarella cheese", "breadcrumbs", "garlic", "parsley", "olive oil"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Rapid Crispy Shrimp Tacos",
@@ -136,7 +181,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/rapid-shrimp-tacos-22d5dd1e.jpg",
     "source_url": "https://www.hellofresh.com/recipes/rapid-shrimp-tacos-5835af6d9df181790731abd2",
     "ingredients": ["shrimp", "tortilla", "cabbage", "lime", "sour cream", "chili powder"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Teriyaki Chicken Tenders",
@@ -144,7 +192,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/5a664231ad1d6c6f007d0d72-0c9bca71.jpg",
     "source_url": "https://www.hellofresh.com/recipes/teriyaki-chicken-tenders-5a664231ad1d6c6f007d0d72",
     "ingredients": ["chicken tenders", "soy sauce", "ginger", "garlic", "brown sugar", "sesame seeds"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Spanish One-Pan Chicken",
@@ -152,7 +203,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/spanish-one-pot-chicken-7dc5fcf4.jpg",
     "source_url": "https://www.hellofresh.com/recipes/spanish-one-pan-chicken-582c97682e69d7666b64ed42",
     "ingredients": ["chicken thighs", "bell pepper", "tomato", "paprika", "onion", "olive oil"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Crispy Parmesan Chicken",
@@ -160,7 +214,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/5e25f50779260e7a2945d952-a6d38e25.jpg",
     "source_url": "https://www.hellofresh.com/recipes/crispy-parmesan-chicken-5e25f50779260e7a2945d952",
     "ingredients": ["chicken breast", "parmesan cheese", "breadcrumbs", "egg", "garlic powder", "parsley"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Korean Beef Bibimbap",
@@ -168,7 +225,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/5ab3b883ae08b53bb4024952-cd6ea4a4.jpg",
     "source_url": "https://www.hellofresh.com/recipes/korean-beef-bibimbap-5ab3b883ae08b53bb4024952",
     "ingredients": ["ground beef", "rice", "carrots", "zucchini", "soy sauce", "egg", "gochujang"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Chicken, Cauliflower & Chickpea Curry",
@@ -176,7 +236,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/66ba4ca7fb4859096c8b62ad-1d4ab1b2.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/chicken-cauliflower-and-chickpea-curry-66bcf673e0cd363400c275c7",
     "ingredients": ["chicken breast", "cauliflower", "chickpeas", "curry powder", "tomato", "onion", "garlic"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Spiced Cauliflower with Chickpea Curry",
@@ -184,7 +247,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/66ba4ca7fb4859096c8b62ad-1d4ab1b2.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/spiced-cauliflower-with-chickpea-curry-66ba4ca7fb4859096c8b62ad",
     "ingredients": ["cauliflower", "chickpeas", "curry powder", "garlic", "tomato", "onion", "cilantro"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Chickpea Fritters & Chicken",
@@ -192,7 +258,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/66b151d778d91450badf8186-16457689.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/chickpea-fritters-and-chicken-66b3e072995e511e4eca9ed8",
     "ingredients": ["chickpeas", "flour", "chicken breast", "garlic", "cumin", "parsley", "onion"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Coconut Curry Turkey with Chickpeas",
@@ -200,7 +269,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/63fe35d8db3e0401490898c0-5a9ba1b5.jpg",
     "source_url": "https://www.hellofresh.com/recipes/coconut-curry-turkey-with-chickpeas-659ef92ff9e1c820e370b28c",
     "ingredients": ["ground turkey", "coconut milk", "chickpeas", "ginger", "garlic", "onion", "curry powder"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Spicy Chicken Coconut Curry Soup",
@@ -208,7 +280,10 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/64d255c17a42584bbbe507ff-1fdcd8ba.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/spicy-chicken-coconut-curry-soup-64d3d325b7c13e5fd9fd1fc4",
     "ingredients": ["chicken breast", "coconut milk", "curry paste", "chili", "garlic", "onion", "lime"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   },
   {
     "title": "Warm Curried Tofu & Rice Wraps",
@@ -216,6 +291,9 @@
     "thumbnail": "https://media.hellofresh.com/c_fit,f_auto,fl_lossy,h_1100,q_50,w_2600/hellofresh_s3/image/6488853c0b7af205da01b344-3ad009cb.jpeg",
     "source_url": "https://www.hellofresh.com/recipes/warm-curried-tofu-and-rice-wraps-6488853c0b7af205da01b344",
     "ingredients": ["tofu", "rice", "tortilla", "curry powder", "garlic", "spinach", "onion"],
-    "deleted": false
+    "deleted": false,
+    "num_ratings": 10,
+    "total_score": 45,
+    "rating": 4.5
   }
 ]

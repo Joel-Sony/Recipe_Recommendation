@@ -21,9 +21,7 @@ const allIngredients = [
   "flour", "coconut milk", "curry paste", "chili", "lime", "tofu", "spinach"
 ];
 
-// ==========================================================
-// ⭐️ NEW: StarRating Component
-// ==========================================================
+
 const StarRating = ({ recipeId, currentRating, onRate, disabled }) => {
   const [hover, setHover] = useState(0);
   const maxStars = 5;
@@ -163,9 +161,7 @@ function App() {
     }
   };
   
-  // ==========================================================
-  // ⭐️ NEW: handleRate function
-  // ==========================================================
+
   const handleRate = async (recipeId, score) => {
     setLoading(true);
     try {
@@ -181,11 +177,14 @@ function App() {
       }
 
       // Update the local state with the new recipe data (which should include the updated average rating)
-      const updatedRecipe = await res.json();
-      
+      const data = await res.json();
+      const updatedRecipeData = data.recipe; // extract cleanly
+      console.log("Raw backend response:", data);
       setRecipes(prevRecipes =>
         prevRecipes.map(recipe =>
-          recipe._id === recipeId ? { ...recipe, rating: updatedRecipe.rating } : recipe
+          recipe._id === recipeId
+            ? { ...recipe, rating: updatedRecipeData.rating }
+            : recipe
         )
       );
 
@@ -359,8 +358,19 @@ function App() {
 
 
   const toggleTrashView = () => {
-    setShowTrash(prev => !prev);
+    setShowTrash(prev => {
+      const newShowTrash = !prev;
+
+      if (newShowTrash) {
+        fetchTrashedRecipes();
+      } else {
+        fetchRecipes();
+      }
+
+      return newShowTrash;
+    });
   };
+
 
   const closeAddModal = () => {
     setShowAddModal(false);
@@ -535,17 +545,125 @@ function App() {
         )}
       </div>
 
-      {/* Add Recipe Modal (omitted for brevity, unchanged) */}
       {showAddModal && (
         <div className="modal-overlay" onClick={closeAddModal}>
-        {/* ... modal content ... */}
+        <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <h2>Add New Recipe</h2>
+            <form onSubmit={handleAddRecipe}>
+                <input
+                    type="text"
+                    placeholder="Recipe Title"
+                    value={newRecipe.title}
+                    onChange={(e) => setNewRecipe({ ...newRecipe, title: e.target.value })}
+                    required
+                    disabled={loading}
+                />
+                <textarea
+                    placeholder="Description"
+                    value={newRecipe.description}
+                    onChange={(e) => setNewRecipe({ ...newRecipe, description: e.target.value })}
+                    required
+                    disabled={loading}
+                />
+                <input
+                    type="url"
+                    placeholder="Thumbnail URL"
+                    value={newRecipe.thumbnail}
+                    onChange={(e) => setNewRecipe({ ...newRecipe, thumbnail: e.target.value })}
+                    required
+                    disabled={loading}
+                />
+                <input
+                    type="url"
+                    placeholder="Source URL"
+                    value={newRecipe.source_url}
+                    onChange={(e) => setNewRecipe({ ...newRecipe, source_url: e.target.value })}
+                    required
+                    disabled={loading}
+                />
+                <div className="ingredients-input-section">
+                    <label>Ingredients (comma-separated)</label>
+                    <textarea
+                        placeholder="e.g., tomato, cheese, basil, olive oil"
+                        value={ingredientsText}
+                        onChange={(e) => setIngredientsText(e.target.value)}
+                        rows="3"
+                    />
+                    <small className="helper-text">
+                        Enter ingredients separated by commas
+                    </small>
+                </div>
+                <div className="modal-actions">
+                    <button type="submit" className="submit-btn" disabled={loading}>
+                        {loading ? "Adding..." : "Add Recipe"}
+                    </button>
+                    <button type="button" className="cancel-btn" onClick={closeAddModal} disabled={loading}>
+                        Cancel
+                    </button>
+                </div>
+            </form>
+          </div>
         </div>
       )}
 
-      {/* Edit Recipe Modal (omitted for brevity, unchanged) */}
       {showEditModal && editingRecipe && (
         <div className="modal-overlay" onClick={closeEditModal}>
-        {/* ... modal content ... */}
+        <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <h2>Edit Recipe</h2>
+            <form onSubmit={handleUpdateRecipe}>
+              <input
+                type="text"
+                placeholder="Recipe Title"
+                value={editingRecipe.title}
+                onChange={(e) => setEditingRecipe({...editingRecipe, title: e.target.value})}
+                required
+                disabled={loading}
+              />
+              <textarea
+                placeholder="Description"
+                value={editingRecipe.description}
+                onChange={(e) => setEditingRecipe({...editingRecipe, description: e.target.value})}
+                required
+                disabled={loading}
+              />
+              <input
+                type="url"
+                placeholder="Thumbnail URL"
+                value={editingRecipe.thumbnail}
+                onChange={(e) => setEditingRecipe({...editingRecipe, thumbnail: e.target.value})}
+                required
+                disabled={loading}
+              />
+              <input
+                type="url"
+                placeholder="Source URL"
+                value={editingRecipe.source_url}
+                onChange={(e) => setEditingRecipe({...editingRecipe, source_url: e.target.value})}
+                required
+                disabled={loading}
+              />
+              <div className="ingredients-input-section">
+                <label>Ingredients (comma-separated)</label>
+                <textarea
+                  placeholder="e.g., tomato, cheese, basil, olive oil"
+                  value={ingredientsText}
+                  onChange={(e) => setIngredientsText(e.target.value)}
+                  rows="3"
+                />
+                <small className="helper-text">
+                  Enter ingredients separated by commas
+                </small>
+              </div>
+              <div className="modal-actions">
+                <button type="submit" className="submit-btn" disabled={loading}>
+                  {loading ? "Updating..." : "Update Recipe"}
+                </button>
+                <button type="button" className="cancel-btn" onClick={closeEditModal} disabled={loading}>
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       )}
     </div>

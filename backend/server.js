@@ -9,10 +9,12 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
-const uri = "mongodb://localhost:27017"; // local MongoDB URI
+const uri = "mongodb://localhost:27017"; 
 const client = new MongoClient(uri);
 
 let recipesCollection;
+let ratingCollection;
+
 
 async function connectDB(){
     try{
@@ -189,5 +191,49 @@ app.delete("/recipes/:id/permanent", async (req, res) => {
   }
 });
 
+app.post('/recipes/:id/rate', async (req, res) => {
+    const recipeId = req.params.id;
+    const score = req.body.score; // The score (1-5) sent from the frontend
+
+    // 1. Input Validation
+    if (!score || score < 1 || score > 5) {
+        return res.status(400).json({ message: "Rating score must be between 1 and 5." });
+    }
+
+    try {
+        // 2. Find and Update the Recipe
+        // Assuming your Recipe model has 'num_ratings' (count) and 'total_score'
+        const updatedRecipe = await ratingCollection.findByIdAndUpdate(
+            recipeId,
+            {
+                $inc: { 
+                    num_ratings: 1, 
+                    total_score: score 
+                }
+            },
+            { new: true } // Return the updated document
+        );
+
+        if (!updatedRecipe) {
+            return res.status(404).json({ message: "Recipe not found." });
+        }
+
+        // 3. Recalculate Average Rating (Optional, but good practice)
+        const avgRating = updatedRecipe.num_ratings > 0 
+            ? updatedRecipe.total_score / updatedRecipe.num_ratings 
+            : 0;
+            
+        // Final update to store the calculated average rating (if you store it separately)
+        updatedRecipe.rating = avgRating;
+        await updatedRecipe.save();
+
+        // 4. Respond with the updated recipe data
+        res.status(200).json(updatedRecipe);
+
+    } catch (error) {
+        console.error("Rating error:", error);
+        res.status(500).json({ message: "Server error during rating update." });
+    }
+});
 
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
